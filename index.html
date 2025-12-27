@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<h1>LzFunc - Less Boilerplate</h1>
+        <p>This is a documentation to a Python module called "LzFunc". The module includes some functions that can simplify the code and reduce the "boilerplate", so the programmer doesn't have to grind down his fingers to write 5 more characters.</p>
+        <p style="margin-bottom: 10px">There is a full documentation for all the functions LzFunc that includes:</p>
+        
+        <details>
+        	<summary>Downloading LzFunc</summary>
+            <div class="funccontent"><p>The process is very simple: You just have to enter this line in the Console with PIP installed:</p><div class="codecontent">pip install LzFunc</div><p>And then open your .py file and type in this line that will import all of the functions from the module:</p><div class="codecontent">from LzFunc import *</div><p>By doing these steps, you'll be able to use all <i><strong>LzFunctions</strong></i> in your algorithm. By the way, you can check out a built-in documentation by typing this line:</p><div class="codecontent">help(core)</div>
+        </details>
+        
+        <details>
+        	<summary>nl()</summary>
+            <div class="funccontent"><p>Skips a line in the output. Good for utilities and text games.</p><div class="codecontent">print("Hello")<br>nl(2)<br>print("World")</div><div class="codecontent">> Hello<br>><br>><br>> World</div></div>
+        </details>
+        
+        <details>
+        	<summary>pause()</summary>
+            <div class="funccontent"><p>Waits an interval with a three-dot animation. Can also be used in some utilities in a fake download or as a visual effect.</p><div class="codecontent">print("Hello")<br>pause(3)<br>print("World")</div><div class="codecontent" style="white-space: pre">> Hello<span class="dots"></span></div></div>
+        </details>
+        
+        <details>
+        	<summary>input_yesno()</summary>
+            <div class="funccontent"><p>Makes simple "Yes or No" question, that returns complete boolean answer to the variable. (Has different yes or no answers: yes, y, ofc, of course, duh, yeah, yea, no, n, nah, naw, nuh uh).</p><div class="codecontent">answer = input_yesno("Do you like dancing? ")<br>if answer == True:<br>    print("I like trains.")<br>if answer == False:<br>    print("I like singing!")</div><div class="codecontent">> Do you like dancing? Yes<br>> I like trains.</div></div>
+        </details>
+        
+        <details>
+        	<summary>input_default()</summary>
+            <div class="funccontent"><p>Returns Default value on [ENTER].</p><div class="codecontent">name = input_default("What is your name? (Anonym by Default) ", "Anonym")<br>print(name)</div><div class="codecontent">> What is your name? (Anonym by Default) [ENTER]<br>> Anonym</div></div>
+        </details>
+        
+        <details>
+        	<summary>invert()</summary>
+            <div class="funccontent"><p>Simple switch to invert the variable.<br><span style="font-size: 7px">* No way it's simple, I spent half an hour to make this function.</span></p><div class="codecontent">switchstate = True<br><br>if switchstate == True:<br>    turn = input_yesno("Turn off the switch? ")<br>if turn == False:<br>    None<br>if turn == True:<br>    switchstate = invert(switchstate)<br>print("Current switch state:", switchstate)</div><div class="codecontent">> Turn off the switch? Yes<br>> Current switch state: False</div></div>
+        </details>
+        
+        <p style="color: black; background-color: #FDFAA5; margin: 3px; width: 80px; height: 5px; font-size: 13px; padding: 10px; padding-bottom: 20px; transform: rotate(-15deg); margin-top: 15px">Version: 0.1.1</p>
+        
+        <style>
+        	body {font-family: Arial; background-color: #D8EDAD}
+            h1 {color: white; background-color: #B1D199; margin: 5px; padding: 15px; text-align: center; margin-bottom: 10px}
+            p {color: white; background-color: #93C493; margin: 5px; padding: 20px}
+            summary {color: white; background-color: #90AD82; border: None; margin: 5px; padding: 5px; cursor: pointer; text-align: left; user-select: none}
+            summary:hover {color: lightgrey; background-color: #7D8F73}
+            .funccontent {color: white; background-color: #7D8F73; margin: 5px; padding: 2px 2px 2px 2px}
+            .codecontent {color: white; font-family: 'Courier New', monospace; background-color: black; border-radius: 5px; padding: 10px; margin: 10px}
+            
+  		    .dots::after {
+			content: '.\A ';
+      	    animation: dots 3s steps(4, end) infinite;
+    		}
+    
+    		@keyframes dots {
+     		    0% {content: ".\A ";}
+      		    25% {content: "..\A ";}
+      		    50% {content: "...\A ";}
+                75% {content: "...\A> World";}
+   		    }
+        </style>
+	</body>
+</html>
+
