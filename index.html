@@ -42,7 +42,7 @@
       <div class="funccontent">
         <p>Makes simple "Yes or No" question that returns boolean depending on user's answer. The string argument determines question asked to the user. (Has pre-defined yes or no answers: yes, y, ofc, of course, duh, yeah, yea, no, n, nah, naw, nuh uh).</p>
         <div class="codecontent">answer = input_yesno("Do you like dancing? ") <br>if answer == True: <br>    print("I like dancing too!") <br>else: <br>    print("Too bad.") </div>
-        <div class="codecontent">&gt; Do you like dancing? Yes <br>&gt; Too bad. </div>
+        <div class="codecontent">&gt; Do you like dancing? Yes <br>&gt; I like dancing too! </div>
       </div> <!-- The previous example was stupid --> 
     </details>
     <details>
@@ -59,7 +59,7 @@
         <p>Simple switch to invert any variable. Argument is the variable that supports inversion. The supported variable types are as follows: bool, int, str, list, None and "All".<br>
           <span style="font-size: 9px">* No way it's simple, I spent half an hour to make this function.</span>
         </p>
-        <div class="codecontent">switchstate = int(input("Enter number: ")) <br> turn = false 
+        <div class="codecontent">number = int(input("Enter number: ")) <br> turn = false 
             <br>
             <br>if number > 0: <br>    turn = input_yesno("Invert the number? ") <br>if turn: <br>    number = invert(number) <br>print("Current number:", number)
         </div>
